@@ -20,14 +20,39 @@ export default function Contents({ className }: ContentsProps) {
   const pathname = usePathname();
 
   useEffect(() => {
-    const headerElements = Array.from(document.querySelectorAll('h1[id], h2[id], h3[id]'));
-    const foundHeaders: HeaderItem[] = headerElements.map((el) => ({
-      id: el.id,
-      text: el.textContent || '(no title)',
-      level: parseInt(el.tagName.replace('H', '')),
-    }));
+    const headerElements = Array.from(document.querySelectorAll('h1, h2, h3'));
 
-    setHeaders(foundHeaders);
+    const slugify = (text: string) =>
+      text
+        .toLowerCase()
+        .replace(/[^\w\s-]/g, '')
+        .replace(/\s+/g, '-');
+
+    const seenIds = new Set<string>();
+
+    const headersWithIds = headerElements.map((el) => {
+      const rawText = el.textContent || '(no title)';
+      let slug = slugify(rawText);
+
+      // Ensure ID uniqueness
+      let uniqueSlug = slug;
+      let counter = 1;
+      while (seenIds.has(uniqueSlug)) {
+        uniqueSlug = `${slug}-${counter++}`;
+      }
+      seenIds.add(uniqueSlug);
+
+      // Set the id attribute
+      el.id = uniqueSlug;
+
+      return {
+        id: uniqueSlug,
+        text: rawText,
+        level: parseInt(el.tagName.replace('H', '')),
+      };
+    });
+
+    setHeaders(headersWithIds);
   }, [pathname]);
 
   return (

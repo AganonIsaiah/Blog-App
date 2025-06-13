@@ -1,9 +1,10 @@
+import React from "react";
 import styles from "./Header.module.css"
 
 export default function Header() {
     return (
         <header className={styles.header}>
-            <h1 className={styles.title}>Isaiah's Blog</h1>
+            <span className={styles.title}>Isaiah's Blog</span>
 
             <div className={styles.right}>
 
