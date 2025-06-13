@@ -1,0 +1,46 @@
+.nav {
+    color: var(--text-secondary);
+    /* padding: 2rem; */
+    gap: 1rem;
+
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+    overflow-y: auto;
+    
+    scrollbar-width: thin;
+    scrollbar-color: var(--text-link-clicked) transparent;
+    scroll-behavior: smooth;
+}
+
+
+
+.nav,
+.nav .section,
+.nav .section .list {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav .section,
+.nav .section .list {
+    gap: 0.2rem;
+}
+
+.nav .section .heading {
+    font-weight: bolder;
+    font-size: 18px;
+    color: var(--text-primary);
+}
+
+.link {
+    transition: color 0.2s, background 0.2s;
+}
+
+.link:hover {
+    color: var(--text-link);
+}
+
+.link:active {
+    color: var(--text-link-clicked);
+}

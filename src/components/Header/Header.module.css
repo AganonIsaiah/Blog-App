@@ -8,25 +8,26 @@
     padding: 1rem 2rem;
 
     .title {
-        font-size: 20px;
+        font-size: 1.4rem;
         font-weight: bold;
     }
 
     .right {
         display: flex;
         gap: 3rem;
+        align-items: center;
 
         .link {
             display: flex;
             gap: 0.5rem;
             align-items: center;
+            transition: color 0.2s, background 0.2s;
 
             .icon {
                 display: flex;
                 align-items: center;
                 width: 20px;
                 height: 20px;
-
             }
 
             .github {
@@ -34,7 +35,11 @@
             }
 
             .github:hover {
-                text-decoration: underline;
+                color: var(--text-link);
+            }
+
+            .github:active {
+                color: var(--text-link-clicked);
             }
         }
 
