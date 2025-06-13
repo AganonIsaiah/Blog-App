@@ -1,3 +1,57 @@
 .container {
-  
+    color: var(--text-secondary);
+
+    /* gap: 1rem; */
+
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+    overflow-y: auto;
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--text-link-clicked) transparent;
+    scroll-behavior: smooth;
+}
+
+.container .heading {
+    font-weight: bolder;
+    font-size: 18px;
+    color: var(--text-primary);
+}
+
+.container,
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .list {
+    gap: 0.2rem;
+}
+
+
+.level1 {
+    font-weight: 500;
+}
+
+.level2 {
+    font-weight: 300;
+    padding-left: 1rem;
+}
+
+.level3 {
+    font-weight: 200;
+    padding-left: 2rem;
+}
+
+.link {
+    transition: color 0.2s, background 0.2s;
+}
+
+.link:hover {
+    color: var(--text-link);
+}
+
+.link:active {
+    color: var(--text-link-clicked);
 }

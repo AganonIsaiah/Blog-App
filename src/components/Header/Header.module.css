@@ -6,45 +6,55 @@
     background-color: var(--header);
     color: var(--text-primary);
     padding: 1rem 2rem;
+}
 
-    .title {
-        font-size: 1.4rem;
-        font-weight: bold;
-    }
+.header .title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
 
-    .right {
-        display: flex;
-        gap: 3rem;
-        align-items: center;
+.header .right {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
 
-        .link {
-            display: flex;
-            gap: 0.5rem;
-            align-items: center;
-            transition: color 0.2s, background 0.2s;
+.header .right .link {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    transition: color 0.2s, background 0.2s;
+}
 
-            .icon {
-                display: flex;
-                align-items: center;
-                width: 20px;
-                height: 20px;
-            }
+.header .right .link .icon {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
 
-            .github {
-                font-weight: 500;
-            }
+.github {
+    font-weight: 500;
+}
 
-            .github:hover {
-                color: var(--text-link);
-            }
+.github:hover {
+    color: var(--text-link);
+}
 
-            .github:active {
-                color: var(--text-link-clicked);
-            }
-        }
+.github:active {
+    color: var(--text-link-clicked);
+}
 
-        .search {
-       
-        }
+/* Placeholder for .search if needed */
+.header .right .search {
+
+}
+
+ @media (max-width: 700px) {
+    .header .right .link .github, 
+    .header .right .link .icon {
+        display: none;
     }
 }
+
+ 

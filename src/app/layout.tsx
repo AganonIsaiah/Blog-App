@@ -37,6 +37,7 @@ export default function RootLayout({
 
           <div className="flex-1 min-w-0">
             {children}
+          
           </div>
 
           <Contents className="hidden md:block flex-shrink-0 w-64" />

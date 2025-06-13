@@ -5,8 +5,9 @@ export default function Header() {
         <header className={styles.header}>
             <h1 className={styles.title}>Isaiah's Blog</h1>
 
-
             <div className={styles.right}>
+
+
 
                 <div className={styles.link}>
                     <img
@@ -21,6 +22,8 @@ export default function Header() {
                         className={styles.github}
                     >AganonIsaiah/Blog-App</a>
                 </div>
+
+
                 <input
                     type="text"
                     placeholder="Search..."
