@@ -32,7 +32,7 @@ export default function RootLayout({
       <body>
         <Header />
 
-        <div className="flex p-6 gap-8 h-[calc(100vh-theme(spacing.20))] overflow-hidden">
+        <div className="flex p-6 gap-8 h-[calc(100vh-theme(spacing.28))] overflow-hidden">
           <Nav className="hidden md:block flex-shrink-0 w-65 pr-4 overflow-y-auto custom-scrollbar" />
 
           <div className="flex-1 min-w-0 pr-4 overflow-y-auto custom-scrollbar">
