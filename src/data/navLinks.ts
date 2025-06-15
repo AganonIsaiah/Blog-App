@@ -49,7 +49,8 @@ export const navSections = [
             { sub: "Express.js", href: "/4" },
             { sub: "Node.js", href: "/6" },
             { sub: "Regex", href: "/7" },
-            { sub: "HTML/CSS Notes", href: "9" }
+            { sub: "JavaScript Notes", href: "/1"},
+            { sub: "HTML/CSS Notes", href: "/9" }
         ],
     },
 

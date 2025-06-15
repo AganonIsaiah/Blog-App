@@ -6,11 +6,6 @@
     position: sticky;
     top: 0;
     max-height: 100vh;
-    overflow-y: auto;
-
-    scrollbar-width: thin;
-    scrollbar-color: var(--text-link-clicked) transparent;
-    scroll-behavior: smooth;
 }
 
 .container .heading {
@@ -35,12 +30,12 @@
 }
 
 .level2 {
-    font-weight: 300;
+    font-weight: 350;
     padding-left: 1rem;
 }
 
 .level3 {
-    font-weight: 200;
+    font-weight: 250;
     padding-left: 2rem;
 }
 

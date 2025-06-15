@@ -20,6 +20,10 @@
 
 }
 
+html {
+    scrollbar-gutter: stable;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -27,10 +31,9 @@ body {
 
     background-color: var(--bg-primary);
     color: var(--text-primary);
-
 }
 
-
+/* HEADERS */
 h1 {
     font-size: 2rem;
 }
@@ -43,10 +46,38 @@ h3 {
     font-size: 1.4rem;
 }
 
-
+/* TEXTS */
 p {
     color: var(--text-secondary)
 }
+
+em {
+    color: var(--text-link);
+}
+
+b, strong {
+    font-weight: 700;
+    color: var(--text-link-clicked);
+}
+
+u {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    color: var(--text-primary);
+}
+
+mark {
+    background-color: var(--text-link-clicked);
+    color: var(--text-primary);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+}
+
+mark:hover {
+    background-color: var(--header);
+}
+
 
 span {
     color: var(--text-link);
@@ -61,12 +92,11 @@ ol {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
-
 }
 
 .custom-scrollbar {
     scroll-behavior: smooth;
-    scrollbar-width: none;
+    scrollbar-width: thin;
     scrollbar-color: transparent transparent;
 }
 
