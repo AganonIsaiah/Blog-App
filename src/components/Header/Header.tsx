@@ -1,20 +1,23 @@
 import React from "react";
 import styles from "./Header.module.css"
+import Image from "next/image";
 
 export default function Header() {
     return (
         <header className={styles.header}>
-            <span className={styles.title}>Isaiah's Blog</span>
+            <span className={styles.title}>Isaiah&apos;s Blog</span>
 
             <div className={styles.right}>
 
 
 
                 <div className={styles.link}>
-                    <img
+                    <Image
                         src="/versioncontrol.svg"
                         alt="Version Control Icon"
                         className={styles.icon}
+                        width={24}
+                        height={24}
                     />
                     <a
                         href="https://github.com/AganonIsaiah/Blog-App"

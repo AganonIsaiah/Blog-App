@@ -7,7 +7,7 @@ export default function Home() {
     { name: 'Jane', age: 25, city: 'Los Angeles' },
     { name: 'Bob', age: 35, city: 'Chicago' }
   ];
-  
+
 
   return (
     <div className="pages">
@@ -20,10 +20,14 @@ export default function Home() {
       <h3>Header3</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vero sed tenetur commodi facere, amet quaerat, dolores reiciendis tempore ducimus consectetur laboriosam ipsum dolore distinctio deleniti eos dolor veritatis veniam.</p>
 
-
       <h2>Table</h2>
-       {tableFormatter(tableData)}
+      {tableFormatter(tableData)}
 
+      <h2>Lists</h2>
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ol>
 
     </div>
   );

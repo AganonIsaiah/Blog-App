@@ -4,7 +4,7 @@
 :root {
     --font-inter: 'Inter', sans-serif;
 
-    --bg-primary: #000000de;
+    --bg-primary: #000000f8;
 
     --header: hsla(225deg, 15%, 9%, 1);
 
@@ -12,14 +12,14 @@
     --text-secondary: #cbd5e1;
     /* --text-paragraph: #e2e8f0; */
 
-    --text-link: #2563eb; 
-    --text-link-clicked: #1d4ed8; 
+    --text-link: #2563eb;
+    --text-link-clicked: #1d4ed8;
 }
 
 * {
     box-sizing: border-box;
     font-family: var(--font-inter);
-    
+
 }
 
 body {
@@ -45,7 +45,7 @@ h3 {
     font-size: 1.4rem;
 }
 
- 
+
 p {
     color: var(--text-secondary)
 }
@@ -54,10 +54,14 @@ span {
     color: var(--text-link);
 }
 
+ol {
+    padding-left: 2rem;
+    list-style: decimal;
+} 
+
 .pages {
-   display: flex;
-   flex-direction: column;
-   gap: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
 
 }
-

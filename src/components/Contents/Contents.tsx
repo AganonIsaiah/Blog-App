@@ -32,7 +32,7 @@ export default function Contents({ className }: ContentsProps) {
 
     const headersWithIds = headerElements.map((el) => {
       const rawText = el.textContent || '(no title)';
-      let slug = slugify(rawText);
+      const slug = slugify(rawText);
 
       // Ensure ID uniqueness
       let uniqueSlug = slug;
