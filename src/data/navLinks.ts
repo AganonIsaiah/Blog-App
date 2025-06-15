@@ -4,8 +4,8 @@ export const navSections = [
 
     {
         heading: "Home Page",
-        links: [ 
-            { sub: "Home", href: "/"}
+        links: [
+            { sub: "Home", href: "/" }
         ]
     },
 
@@ -28,15 +28,15 @@ export const navSections = [
         heading: "Technical Interview",
         links: [
             { sub: "DSA Runtimes Cheat Sheet (Java)", href: "dsa-runtimes" },
-            { sub: "Common LeetCode Patterns + Use Cases", href: "#1" }
+            { sub: "Common LeetCode Patterns", href: "#1" }
         ],
     },
 
     {
         heading: "Behavioural Interview",
         links: [
-            { sub: "STAR Method", href: "#2"},
-            { sub: "Sample Q's", href: "#3"}
+            { sub: "STAR Method", href: "#2" },
+            { sub: "Sample Q's", href: "#3" }
         ],
     },
 
@@ -44,34 +44,36 @@ export const navSections = [
     {
         heading: "Web Development Interview",
         links: [
-            { sub: "React-based Interview", href: "/3"},
-            { sub: "Angular-based Interview", href: "/5"},
-            { sub: "Express.js", href: "/4"},
-            { sub: "Node.js", href: "/6"},
-            { sub: "Regex", href:"/7"},
-            { sub: "Restful APIs", href: "/9"}
+            { sub: "React-based Interview", href: "/3" },
+            { sub: "Angular-based Interview", href: "/5" },
+            { sub: "Express.js", href: "/4" },
+            { sub: "Node.js", href: "/6" },
+            { sub: "Regex", href: "/7" },
+            { sub: "HTML/CSS Notes", href: "9" }
         ],
     },
 
     {
-        heading: "Backend (Spring Boot) Interview",
+        heading: "Backend/Full-stack Interview",
         links: [
-            { sub: "hold", href: "/1"}
+            { sub: "Restful APIs", href: "/9" },
+            { sub: "SQL", href: "/1"},
+            { sub: "Spring Boot", href: "/30"}
         ],
     },
 
     {
         heading: "Mobile Developer (Swift) Interview",
         links: [
-            { sub: "hold", href: "/4"}
+            { sub: "hold", href: "/4" }
         ],
     },
 
-    { 
-        heading: "French Notes",
-        links: [
-            { sub: "Conjugations", href: "/"}
-        ]
-    }
+    // {
+    //     heading: "French Notes",
+    //     links: [
+    //         { sub: "Conjugations", href: "/" }
+    //     ]
+    // }
 
 ]
