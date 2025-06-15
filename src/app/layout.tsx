@@ -32,15 +32,15 @@ export default function RootLayout({
       <body>
         <Header />
 
-        <div className="flex p-8 gap-8 min-h-screen">
-          <Nav className="hidden md:block flex-shrink-0 w-64" />
+        <div className="flex p-6 gap-8 h-[calc(100vh-theme(spacing.20))] overflow-hidden">
+          <Nav className="hidden md:block flex-shrink-0 w-80" />
 
           <div className="flex-1 min-w-0">
             {children}
           
           </div>
 
-          <Contents className="hidden md:block flex-shrink-0 w-64" />
+          <Contents className="hidden md:block flex-shrink-0 w-40" />
         </div>
       </body>
     </html>
