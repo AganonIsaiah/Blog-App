@@ -3,14 +3,12 @@
 
 :root {
     --font-inter: 'Inter', sans-serif;
+    --bg-primary: #000000;
 
-    --bg-primary: #000000f8;
+    --header: #0f172a;
 
-    --header: hsla(225deg, 15%, 9%, 1);
-
-    --text-primary: #f8fafc;
-    --text-secondary: #cbd5e1;
-    /* --text-paragraph: #e2e8f0; */
+    --text-primary: #ffffff;
+    --text-secondary: #9ca3af;
 
     --text-link: #2563eb;
     --text-link-clicked: #1d4ed8;
@@ -57,11 +55,22 @@ span {
 ol {
     padding-left: 2rem;
     list-style: decimal;
-} 
+}
 
 .pages {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 0.4rem;
 
+}
+
+.custom-scrollbar {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent;
+}
+
+.custom-scrollbar:hover {
+    scrollbar-width: thin;
+    scrollbar-color: var(--text-link-clicked) transparent;
 }

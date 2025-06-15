@@ -5,12 +5,12 @@
 
     position: sticky;
     top: 0;
-    max-height: 100vh;
-    overflow-y: auto;
-    
+    /* max-height: 110vh; */
+    /* overflow-y: auto; */
+/*     
     scrollbar-width: thin;
     scrollbar-color: var(--text-link-clicked) transparent;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; */
 }
 
 

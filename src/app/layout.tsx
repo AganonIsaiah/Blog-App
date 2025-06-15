@@ -33,14 +33,14 @@ export default function RootLayout({
         <Header />
 
         <div className="flex p-6 gap-8 h-[calc(100vh-theme(spacing.20))] overflow-hidden">
-          <Nav className="hidden md:block flex-shrink-0 w-80" />
+          <Nav className="hidden md:block flex-shrink-0 w-80 overflow-y-auto custom-scrollbar" />
 
-          <div className="flex-1 min-w-0">
+          <div className="flex-1 min-w-0 overflow-y-auto custom-scrollbar">
             {children}
           
           </div>
 
-          <Contents className="hidden md:block flex-shrink-0 w-40" />
+          <Contents className="hidden md:block flex-shrink-0 w-40 overflow-y-auto custom-scrollbar" />
         </div>
       </body>
     </html>
