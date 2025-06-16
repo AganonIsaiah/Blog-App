@@ -1,6 +1,6 @@
 
 const a = ["algorithms", "technical","behavioural","web-dev","fullstack","mobile"]
-const b = [""];
+
 
 export const navFr = [
     {
