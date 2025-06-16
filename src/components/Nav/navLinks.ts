@@ -1,7 +1,19 @@
 
+const a = ["algorithms", "technical","behavioural","web-dev","fullstack","mobile"]
+const b = [""];
+
+export const navFr = [
+    {
+        heading: "French",
+        links: [
+            { sub: "Accueil", href:"/"},
+
+        ]
+    }
+]
+
 export const navSections = [
-
-
+    
     {
         heading: "Home Page",
         links: [
@@ -12,14 +24,15 @@ export const navSections = [
     {
         heading: "Algorithms Cheat Sheet",
         links: [
-            { sub: "Array", href: "#a" },
-            { sub: "String", href: "#b" },
-            { sub: "Stack", href: "#c" },
-            { sub: "Queue", href: "#d" },
-            { sub: "Linked List", href: "#e" },
-            { sub: "Hash Table", href: "#f" },
-            { sub: "Recursion", href: "#g" },
-            { sub: "Search and Sort", href: "#h" },
+            { sub: "DSA Runtimes Cheat Sheet", href: `${a[0]}/runtimes` },
+            { sub: "Array", href: `${a[0]}/array` },
+            { sub: "String", href: `${a[0]}/string` },
+            { sub: "Stack", href: `${a[0]}/stack`},
+            { sub: "Queue", href: `${a[0]}/queue`},
+            { sub: "Linked List", href: `${a[0]}/linkedlist` },
+            { sub: "Hash Table", href: `${a[0]}/hashtable` },
+            { sub: "Recursion", href: `${a[0]}/recursion` },
+            { sub: "Search and Sort", href: `${a[0]}/searchsort` },
         ]
     },
 
@@ -27,8 +40,9 @@ export const navSections = [
     {
         heading: "Technical Interview",
         links: [
-            { sub: "DSA Runtimes Cheat Sheet (Java)", href: "dsa-runtimes" },
-            { sub: "Common LeetCode Patterns", href: "#1" }
+
+            { sub: "Common LeetCode Patterns", href: "#1" },
+            { sub: "Keywords for Identifying Strategy", href: `${a[1]}/keywords`}
         ],
     },
 
@@ -49,7 +63,7 @@ export const navSections = [
             { sub: "Express.js", href: "/4" },
             { sub: "Node.js", href: "/6" },
             { sub: "Regex", href: "/7" },
-            { sub: "JavaScript Notes", href: "/1"},
+            { sub: "JavaScript Notes", href: "/1" },
             { sub: "HTML/CSS Notes", href: "/9" }
         ],
     },
@@ -58,8 +72,8 @@ export const navSections = [
         heading: "Backend/Full-stack Interview",
         links: [
             { sub: "Restful APIs", href: "/9" },
-            { sub: "SQL", href: "/1"},
-            { sub: "Spring Boot", href: "/30"}
+            { sub: "SQL", href: "/1" },
+            { sub: "Spring Boot", href: "/30" }
         ],
     },
 
@@ -68,13 +82,6 @@ export const navSections = [
         links: [
             { sub: "hold", href: "/4" }
         ],
-    },
-
-    // {
-    //     heading: "French Notes",
-    //     links: [
-    //         { sub: "Conjugations", href: "/" }
-    //     ]
-    // }
+    }
 
 ]

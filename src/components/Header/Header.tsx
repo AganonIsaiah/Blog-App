@@ -1,15 +1,31 @@
-import React from "react";
+'use client';
+import React, { useState } from "react";
 import styles from "./Header.module.css"
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
+    const router = useRouter();
+    const [query, setQuery] = useState("");
+
+    const handleKeyDown = async (e: React.KeyboardEvent<HTMLInputElement>) => {
+        router.replace("/")
+        if (e.key === "Enter") {
+            const trimmedQuery = query.trim().toLowerCase();
+            if (trimmedQuery) {
+
+                await router.push(trimmedQuery);
+                setQuery("");
+            }
+        }
+    };
+
+
     return (
         <header className={styles.header}>
             <span className={styles.title}>Isaiah&apos;s Blog</span>
 
             <div className={styles.right}>
-
-
 
                 <div className={styles.link}>
                     <Image
@@ -32,6 +48,9 @@ export default function Header() {
                     type="text"
                     placeholder="Search..."
                     className={styles.search}
+                    value={query}
+                    onChange={e => setQuery(e.target.value)}
+                    onKeyDown={handleKeyDown}
                 />
 
 

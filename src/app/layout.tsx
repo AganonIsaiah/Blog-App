@@ -39,7 +39,7 @@ export default function RootLayout({
             {children}
           </div>
 
-          <Contents className="hidden lg:block flex-shrink-0 w-40 overflow-y-auto custom-scrollbar" />
+          <Contents className="hidden md:block flex-shrink-0 w-40 overflow-y-auto custom-scrollbar" />
         </div>
       </body>
     </html>

@@ -20,14 +20,10 @@
 
 }
 
-html {
-    scrollbar-gutter: stable;
-}
-
 body, html {
     margin: 0;
     padding: 0;
-    overflow-y: auto;
+ 
 
     background-color: var(--bg-primary);
     color: var(--text-primary);
@@ -37,19 +33,22 @@ body, html {
 /* HEADERS */
 h1 {
     font-size: 2rem;
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    
 }
 
 h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 /* TEXTS */
 p {
-    color: var(--text-secondary)
+    color: var(--text-secondary);
+    margin: 0 0.5rem;
 }
 
 em {
@@ -70,7 +69,7 @@ u {
 mark {
     background-color: var(--text-link-clicked);
     color: var(--text-primary);
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 0.5rem;
     border-radius: 8px;
 }
@@ -88,6 +87,7 @@ ol {
     padding-left: 2rem;
     list-style: decimal;
 }
+
 
 .pages {
     display: flex;
