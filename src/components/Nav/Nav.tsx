@@ -23,6 +23,7 @@ export default function Nav({ className }: NavProps) {
                         <ul className={styles.list}>
                             {section.links.map((link) => (
                                 <li key={link.href}>
+                                    <span>{"> "} </span>
                                     <Link href={`/${link.href}`} className={styles.link}>{link.sub}</Link>
                                 </li>
                             ))}

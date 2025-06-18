@@ -41,7 +41,7 @@ export const navSections = [
         heading: "Technical Interview",
         links: [
 
-            { sub: "Common LeetCode Patterns", href: "#1" },
+            { sub: "Common LeetCode Patterns", href:`${a[1]}/patterns` },
             { sub: "Keywords for Identifying Strategy", href: `${a[1]}/keywords`}
         ],
     },
@@ -49,8 +49,8 @@ export const navSections = [
     {
         heading: "Behavioural Interview",
         links: [
-            { sub: "STAR Method", href: "#2" },
-            { sub: "Sample Q's", href: "#3" }
+            { sub: "Introduce Yourself", href: `${a[2]}/intro`},
+            { sub: "Discuss Qualifications", href: `${a[2]}/qual`}
         ],
     },
 
